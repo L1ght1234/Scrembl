@@ -1,6 +1,0 @@
-@Scrembl.WebApi_HostAddress = http://localhost:5175
-
-GET {{Scrembl.WebApi_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
