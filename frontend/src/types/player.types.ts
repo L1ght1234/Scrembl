@@ -1,3 +1,5 @@
+export type PlayerRole = 'Artist' | 'Guesser' | 'Spectator';
+
 export interface Player {
   id: string;
   name: string;
@@ -6,10 +8,3 @@ export interface Player {
   isHost: boolean;
   role?: PlayerRole;
 }
-
-export enum PlayerRole {
-  Artist = 'Artist',
-  Guesser = 'Guesser',
-  Spectator = 'Spectator',
-}
-

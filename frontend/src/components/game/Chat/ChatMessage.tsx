@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChatMessage as ChatMessageType } from '../../../types/game.types';
+import type { ChatMessage as ChatMessageType } from '../../../types/game.types';
 import { formatRelativeTime } from '../../../utils/formatters';
 import styles from './Chat.module.css';
 

@@ -1,6 +1,6 @@
 import { useRef, useCallback } from 'react';
 import { CanvasService } from '../../../services/canvas/CanvasService';
-import { Point } from '../../../types/canvas.types';
+import type { Point } from '../../../types/canvas.types';
 
 export const useCanvas = (canvasRef: React.RefObject<HTMLCanvasElement>) => {
   const canvasServiceRef = useRef<CanvasService | null>(null);

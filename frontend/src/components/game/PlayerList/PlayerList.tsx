@@ -1,6 +1,6 @@
 import React from 'react';
 import { PlayerCard } from './PlayerCard';
-import { Player } from '../../../types/player.types';
+import type { Player } from '../../../types/player.types';
 import styles from './PlayerList.module.css';
 
 interface PlayerListProps {

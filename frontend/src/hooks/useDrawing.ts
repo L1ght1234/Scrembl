@@ -2,7 +2,7 @@ import { useRef, useCallback } from 'react';
 import { CanvasService } from '../services/canvas/CanvasService';
 import { StrokeManager } from '../services/canvas/StrokeManager';
 import { LineSimplifier } from '../services/canvas/LineSimplifier';
-import { Point } from '../types/canvas.types';
+import type { Point } from '../types/canvas.types';
 
 export const useDrawing = (canvasRef: React.RefObject<HTMLCanvasElement | null>) => {
   const canvasServiceRef = useRef<CanvasService | null>(null);

@@ -1,4 +1,4 @@
-import { Point } from '../../types/canvas.types';
+import type { Point } from '../../types/canvas.types';
 
 export class CanvasService {
   private canvas: HTMLCanvasElement | null = null;
