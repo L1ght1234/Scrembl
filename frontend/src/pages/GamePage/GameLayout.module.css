@@ -1,0 +1,94 @@
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  height: 100vh;
+  padding: 1rem;
+  background: var(--bg-primary, #f5f5f5);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.timerSection {
+  background: var(--bg-secondary, #fff);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.wordHintSection {
+  background: var(--bg-secondary, #fff);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.playerListSection {
+  flex: 1;
+  background: var(--bg-secondary, #fff);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  min-height: 200px;
+}
+
+.chatSection {
+  background: var(--bg-secondary, #fff);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.canvasContainer {
+  position: relative;
+  flex: 1;
+  background: var(--bg-secondary, #fff);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.drawingTools {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .sidebar {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .timerSection,
+  .wordHintSection,
+  .playerListSection,
+  .chatSection {
+    min-width: 250px;
+  }
+}
+

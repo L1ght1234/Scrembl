@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: var(--bg-secondary, #fff);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary, #333);
+}
+
+.wordReveal {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.wordLabel {
+  font-size: 1rem;
+  color: var(--text-secondary, #666);
+  margin-bottom: 0.5rem;
+}
+
+.word {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary, #007bff);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.scores {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.scoresTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-primary, #333);
+}
+
+.scoresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.scoreItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  background: var(--bg-tertiary, #f5f5f5);
+  border-radius: 8px;
+}
+
+.playerName {
+  font-weight: 500;
+  color: var(--text-primary, #333);
+}
+
+.score {
+  font-weight: bold;
+  color: var(--success, #28a745);
+}
+
+.nextButton {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: var(--primary, #007bff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nextButton:hover {
+  background: var(--primary-hover, #0056b3);
+}
+
+.nextButton:active {
+  transform: scale(0.98);
+}
+

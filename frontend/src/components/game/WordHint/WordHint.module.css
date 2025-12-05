@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: var(--bg-secondary, #fff);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hint {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: var(--text-primary, #333);
+}
+
+.letter {
+  min-width: 1.5em;
+  text-align: center;
+  padding: 0.25rem;
+  border-bottom: 3px solid var(--primary, #007bff);
+  transition: all 0.3s ease;
+}
+
+.letter.revealed {
+  color: var(--success, #28a745);
+  border-bottom-color: var(--success, #28a745);
+}
+
